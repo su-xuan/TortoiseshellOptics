@@ -54,7 +54,7 @@ nav .desktop {
 .mobile {
   display: none;
 }
-nav>span {
+nav .desktop>span {
   margin: 0 1rem;
 }
 
@@ -81,5 +81,29 @@ nav>span {
   }
 }
 @media only Screen and (max-width: 470px) {
+  .main {
+    background-position: 20%;
+    height: 17rem;
+  }
+  .logo span {
+    display: none;
+  }
+  nav .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    position: relative;
+    right: 1rem;
+  }
+  .headline {
+    font-size: 1rem;
+    padding: 1rem auto;
+    top: 5rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  }
 
 }
