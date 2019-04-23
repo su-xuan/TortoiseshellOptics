@@ -37,7 +37,6 @@ html {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-
 }
 .logoimage img {
   height: 1.5rem;
@@ -45,10 +44,16 @@ html {
 }
 
 nav {
-  display: flex;
-  align-items: center;
+  position: relative;
+  right: 1rem;
 }
-
+nav .desktop {
+  align-items: center;
+  display: flex;
+}
+.mobile {
+  display: none;
+}
 nav>span {
   margin: 0 1rem;
 }
@@ -69,4 +74,12 @@ nav>span {
   .company {
     top: 0;
   }
+  .headline {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    top: 5rem;
+  }
+}
+@media only Screen and (max-width: 470px) {
+
 }
